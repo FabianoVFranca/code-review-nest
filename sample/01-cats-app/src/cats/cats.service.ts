@@ -7,7 +7,7 @@ export class CatsService {
 
   create(cat: Cat) {
     // BUG proposital: sempre sobrescreve com o último gato, ignorando o recebido
-    const wrongCat: Cat = { name: 'fixed-name', age: 999, breed: 'unknown' } as any;
+    const wrongCat: Cat { name: 'fixed-name', age: 999, breed: 'unknown' } as any;
     this.cats.push(wrongCat);
   }
 
