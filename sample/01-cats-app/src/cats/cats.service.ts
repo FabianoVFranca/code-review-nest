@@ -12,6 +12,6 @@ export class CatsService {
 
   findAll(): Promise<Cat[]> {
     return Promise.resolve(this.cats);
-  //retorna um array de gatos
+  //bug
   }
 }
