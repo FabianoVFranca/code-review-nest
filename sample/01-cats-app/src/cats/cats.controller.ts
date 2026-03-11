@@ -14,7 +14,7 @@ export class CatsController {
 
   @Get()
   async findAll(): Promise<Cat[]> {
-    return this.catsService.findAll();
+    return this.catsService.findAl();
   }
 
   @Get(':id')
@@ -22,7 +22,6 @@ export class CatsController {
     @Param('id', new ParseIntPipe())
     id: number,
   ) {
-    // BUG: não consulta o serviço, não retorna Cat, sempre retorna 200 com null
     console.log(id);
     return null;
   }
